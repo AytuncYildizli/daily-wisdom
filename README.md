@@ -20,10 +20,22 @@ Use the prompt template with any scheduling system + API call (GitHub Actions, n
 ## ✨ What It Does
 
 - **Generates a new story every day** from a pool of 100+ historical figures, epics, and traditions
+- **Research-backed** — the agent web-searches to verify quotes, dates, and facts before writing (no hallucinated quotes)
 - **Original-language quotes** — Latin, Arabic, Japanese, Ancient Greek, Old Norse, Sanskrit, Mandinka, and more
 - **Modern connections** — each story links to something relevant today
 - **Never repeats** — a history file tracks what's been covered
 - **Multiple formats** — standard, Twitter thread, minimal, deep dive
+
+## 🔍 How It Works
+
+1. Agent reads the **history file** to see what's already been covered
+2. Picks a source from the pool, maximizing variety across civilizations
+3. **Searches the web** to find accurate quotes, dates, and lesser-known details
+4. Writes the story with original-language quote, narrative, and modern connection
+5. Delivers via your preferred channel
+6. Appends today's topic to the history file
+
+No database, no API, no dependencies — just a prompt template + an LLM with web search access.
 
 ## 📦 Example Output
 
