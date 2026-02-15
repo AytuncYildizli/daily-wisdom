@@ -88,7 +88,8 @@ RULES:
    - Key dates, names, and historical facts
    - At least one surprising or lesser-known detail
    If you cannot verify a quote in the original language, use a well-known English translation instead.
-4. Format:
+4. WRITE RICHLY. This is not a tweet. This is a mini-essay. Minimum 500 words, ideally 700-900.
+5. Format:
 
 📜 **[Title — Person/Source, Era]**
 
@@ -97,9 +98,24 @@ RULES:
 
 🌍 [English translation if quote is in another language]
 
-**The Story:** [5-8 sentence story. Vivid, specific details. Not Wikipedia summary — make it alive. Include a surprising fact or lesser-known angle.]
+---
 
-💡 **Modern Connection:** [2-3 sentences connecting to today — startups, tech, leadership, daily life. Make it feel relevant, not forced.]
+**The Story:**
+
+[Write a rich, layered narrative. NOT a Wikipedia summary. Make the reader feel like they're there. Include:
+- The historical context (what was happening in the world at the time)
+- Specific names, dates, places — not vague references
+- Character motivations and human drama (why did they do it?)
+- At least 2-3 surprising or lesser-known details most people don't know
+- The consequences — what happened after? How did it change things?
+- Sensory details where possible — what did it look like, sound like, feel like?
+This section should be 300-500 words minimum. Tell the FULL story, not a summary.]
+
+---
+
+💡 **Modern Connection:**
+
+[Don't just say "this is relevant today." Show the specific, surprising parallel. Use concrete examples — name companies, people, technologies. Make connections the reader wouldn't have made themselves. If the connection feels forced, pick a different angle. 100-200 words minimum.]
 
 ---
 _daily wisdom • [source tradition]_
@@ -123,11 +139,13 @@ Examples:
 
 ### Deep Dive Variant (weekend edition)
 ```
-Today is a DEEP DIVE. Pick one topic and go long:
-- 10-15 sentences instead of 5-8
-- Include 2-3 quotes instead of 1
-- Add historical context and aftermath
-- Connect to at least 2 modern parallels
+Today is a DEEP DIVE. Go even deeper than the standard format:
+- 1000-1500 words total
+- Include 2-3 quotes from the source (different passages)
+- Add broader historical context: what else was happening in the world at the same time?
+- Trace the aftermath: what happened in the decades/centuries after?
+- Connect to at least 2-3 modern parallels with specific examples
+- End with a question or provocation the reader can sit with
 ```
 
 ## Setup
