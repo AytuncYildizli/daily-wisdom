@@ -69,26 +69,36 @@ daily-wisdom/
 ├── history.md         ← Repeat-prevention tracker (template)
 └── examples/
     │
-    ├── Standard Format (quote → story → modern connection)
+    ├── ── Turkic & Central Asian ──
     ├── turkic-kan-turali.md         ← Warrior couple vs 3 beasts
     ├── turkic-basat-tepegoz.md      ← Turkish Polyphemus
-    ├── turkic-deli-dumrul.md        ← Death vs Love
+    ├── turkic-deli-dumrul.md        ← Death vs Love  
     ├── turkic-orhon.md              ← Bilge Kağan's stone inscription
     ├── turkic-nasreddin.md          ← "Ya tutarsa?" — world's shortest startup manifesto
+    │
+    ├── ── Mythology (cross-civilization) ──
     ├── mythology-gilgamesh.md       ← Oldest story, first pivot
+    ├── mythology-prometheus.md      ← Fire thief — every whistleblower's ancestor
+    ├── mythology-ragnarok.md        ← Gods who knew they'd lose and fought anyway
+    ├── mythology-anansi.md          ← Spider who bought all stories (first hacker)
+    ├── mythology-maui.md            ← Trickster who lassoed the sun (Polynesia)
+    │
+    ├── ── Classical & Islamic ──
     ├── classical-seneca.md          ← Time is the only non-renewable
     ├── classical-marcus-aurelius.md ← Obstacle is the way (the original)
-    ├── fareast-musashi.md           ← Sword from an oar
     ├── islamic-ibn-sina.md          ← First biofeedback experiment
     ├── sufi-mevlana.md              ← The wound is where light enters
-    ├── african-sundiata.md          ← The crippled boy who built an empire
-    ├── indian-chanakya.md           ← The kingmaker's 2000-year-lost playbook
+    │
+    ├── ── Far East, African, Indian ──
+    ├── fareast-musashi.md           ← Sword from an oar
+    ├── african-sundiata.md          ← Crippled boy who built an empire
+    ├── indian-chanakya.md           ← Kingmaker's 2000-year-lost playbook
     ├── norse-havamal.md             ← Odin's price for wisdom
     │
-    ├── Alternative Formats
-    ├── format-thread.md             ← Twitter/X thread style (Mansa Musa)
+    ├── ── Alternative Formats ──
+    ├── format-thread.md             ← Twitter/X thread (Mansa Musa)
     ├── format-thisday.md            ← "This Day in History" (Galileo)
-    └── zen-gateless-gate.md         ← Minimal/koan style — no modern connection
+    └── zen-gateless-gate.md         ← Minimal koan — no modern connection
 ```
 
 ## 🎯 Source Pool
