@@ -7,7 +7,7 @@ An [OpenClaw](https://github.com/openclaw/openclaw) skill that delivers a rich d
 ## ✨ Features
 
 - **🌍 Cross-civilizational source pool** — Dede Korkut, Marcus Aurelius, Ibn Sina, Musashi, Gilgamesh, Mevlana, Nasreddin Hoca, and 50+ more
-- **⚖️ Weighted diversity** — 40% Turkic/Islamic, 20% Classical, 15% Far East, 15% Ancient, 10% Renaissance
+- **⚖️ Equal-weight diversity** — No tradition dominates; picks maximize variety across all civilizations
 - **🔄 Zero repeats** — History file tracking prevents duplicate topics across months
 - **💡 Modern connections** — Every story links to startups, tech, leadership, or daily life
 - **📝 Original language quotes** — Göktürk, Latin, Arabic, Japanese, Ancient Greek, Persian
@@ -81,13 +81,17 @@ daily-wisdom/
 
 ## 🎯 Source Pool
 
-| Region | Weight | Key Sources |
-|--------|--------|-------------|
-| **Turkic & Islamic** | 40% | Dede Korkut, Orhon Yazıtları, Manas, Nasreddin Hoca, Mevlana, Yunus Emre, İbn Sina, El-Harezmi, İbn Haldun, Evliya Çelebi, Piri Reis |
-| **Classical Mediterranean** | 20% | Seneca, Marcus Aurelius, Epictetus, Heraclitus, Diogenes, Plutarch |
-| **Far East** | 15% | Sun Tzu, Musashi, Confucius, Laozi, Zen koans |
-| **Ancient & Pre-Classical** | 15% | Gilgamesh, Egyptian wisdom, Norse Hávamál, Sumerian proverbs |
-| **Renaissance & Early Modern** | 10% | Machiavelli, Montaigne, Ibn Battuta, Leonardo |
+All traditions drawn equally — no fixed percentages. Maximum variety, no back-to-back repeats from the same tradition.
+
+| Region | Key Sources |
+|--------|-------------|
+| **Turkic & Central Asian** | Dede Korkut, Orhon Yazıtları, Manas, Nasreddin Hoca, Mete Han, Attila |
+| **Islamic Golden Age & Sufi** | Ibn Sina, Al-Khwarizmi, Mevlana, Yunus Emre, Ibn Battuta, Ibn Khaldun |
+| **Classical Mediterranean** | Seneca, Marcus Aurelius, Epictetus, Heraclitus, Diogenes, Plutarch |
+| **Far East** | Sun Tzu, Musashi, Confucius, Laozi, Chanakya, Zen koans |
+| **Ancient & Pre-Classical** | Gilgamesh, Egyptian (Ptahhotep), Norse (Hávamál), Sumerian, Zoroastrian |
+| **African & Indigenous** | Sundiata Keita, Mansa Musa, Anansi, Ubuntu, Timbuktu scholars |
+| **Renaissance & Modern** | Machiavelli, Montaigne, Leonardo, Ada Lovelace, Tesla |
 
 ## ⚙️ Customization
 

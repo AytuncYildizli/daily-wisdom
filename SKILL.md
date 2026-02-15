@@ -24,40 +24,53 @@ Each day, the agent:
 4. Delivers via the configured channel (WhatsApp, Telegram, Slack, etc.)
 5. Logs the topic to history
 
-## Source Pool (Weighted)
+## Source Pool
 
-### Turkic & Islamic World (40% weight)
-- **Dede Korkut Destanları** — Kan Turalı, Basat & Tepegöz, Deli Dumrul, Bamsı Beyrek, Salur Kazan
+All traditions are drawn from equally — no fixed percentages. The agent picks whatever makes the most interesting story for that day, maximizing variety across the full pool. The only rule: don't repeat a tradition back-to-back.
+
+### Turkic & Central Asian
+- **Dede Korkut** — Kan Turalı, Basat & Tepegöz, Deli Dumrul, Bamsı Beyrek, Salur Kazan
 - **Orhon Yazıtları** — Bilge Kağan, Kül Tigin, Tonyukuk
 - **Göktürk & Hun** — Mete Han, Bumin Kağan, İstemi Yabgu, Attila
-- **Selçuklu & Osmanlı** — Alparslan, Fatih, Mimar Sinan, Piri Reis, Evliya Çelebi, Barbaros
-- **Nasreddin Hoca** — Timeless wit and paradox
 - **Manas Destanı** — Kırgız epic, largest oral tradition in the world
-- **Yunus Emre, Mevlana, Hacı Bektaş Veli** — Sufi wisdom
-- **İbn-i Sina, El-Harezmi, İbn Haldun** — Islamic golden age science & philosophy
-- **Divan-ı Hikmet (Ahmet Yesevi)** — Turkic Sufi poetry
+- **Nasreddin Hoca** — Timeless wit and paradox
 
-### Classical Mediterranean (20%)
+### Islamic Golden Age & Sufi
+- **İbn Sina, Al-Khwarizmi, Ibn Khaldun, Al-Biruni** — Science & philosophy
+- **Mevlana, Yunus Emre, Hacı Bektaş Veli, Ahmed Yesevi** — Sufi poetry & wisdom
+- **Ibn Battuta** — The greatest traveler
+- **Selçuklu & Osmanlı** — Alparslan, Fatih, Mimar Sinan, Piri Reis, Evliya Çelebi
+
+### Classical Mediterranean
 - **Stoicism** — Seneca, Marcus Aurelius, Epictetus
-- **Greek** — Heraclitus, Diogenes, Thales, Aristotle
+- **Greek** — Heraclitus, Diogenes, Thales, Aristotle, Socrates
 - **Roman** — Cicero, Cato, Plutarch
 
-### Far East (15%)
+### Far East
 - **Sun Tzu** — Art of War
 - **Miyamoto Musashi** — Book of Five Rings
-- **Confucius, Laozi** — Eastern philosophy
+- **Confucius, Laozi, Zhuangzi** — Eastern philosophy
 - **Zen koans** — Paradox and insight
+- **Chanakya (Kautilya)** — Indian statecraft
 
-### Ancient & Pre-Classical (15%)
+### Ancient & Pre-Classical
 - **Gilgamesh** — The oldest story
-- **Egyptian** — Ptahhotep, Book of the Dead
-- **Norse** — Hávamál, Odin's wisdom
+- **Egyptian** — Ptahhotep, Book of the Dead, Imhotep
+- **Norse** — Hávamál, Odin's wisdom, Ragnarök
 - **Sumerian proverbs**
+- **Zoroastrian** — Avesta, good thoughts/words/deeds
 
-### Renaissance & Early Modern (10%)
+### African & Indigenous
+- **Sundiata Keita** — Mali Empire founder
+- **Mansa Musa** — Richest human in history
+- **Anansi stories** — West African trickster wisdom
+- **Ubuntu philosophy** — "I am because we are"
+- **Timbuktu scholars** — Sankore University
+
+### Renaissance & Early Modern
 - **Machiavelli, Leonardo, Montaigne**
-- **Ibn Battuta** — The greatest traveler
 - **Copernicus, Galileo** — Paradigm shifts
+- **Ada Lovelace, Nikola Tesla** — Visionaries ahead of their time
 
 ## Prompt Templates
 
@@ -66,7 +79,7 @@ Each day, the agent:
 You are a cultural historian and storyteller. Deliver today's wisdom.
 
 RULES:
-1. Pick a source from the weighted pool. Favor underrepresented sources.
+1. Pick any source from the pool. Maximize variety — don't repeat the same tradition back-to-back. Favor sources that haven't appeared recently in the history.
 2. DO NOT repeat anything from the history file below.
 3. Format:
 
@@ -75,23 +88,28 @@ RULES:
 > *"[Original language quote]"*
 > — [Attribution]
 
-🌍 [Turkish/English translation if quote is in another language]
+🌍 [English translation if quote is in another language]
 
-**Hikaye:** [5-8 sentence story. Vivid, specific details. Not Wikipedia summary — make it alive. Include a surprising fact or lesser-known angle.]
+**The Story:** [5-8 sentence story. Vivid, specific details. Not Wikipedia summary — make it alive. Include a surprising fact or lesser-known angle.]
 
-💡 **Modern Bağlantı:** [2-3 sentences connecting to today — startups, tech, leadership, daily life. Make it feel relevant, not forced.]
+💡 **Modern Connection:** [2-3 sentences connecting to today — startups, tech, leadership, daily life. Make it feel relevant, not forced.]
 
 ---
-_günün bilgeliği • [source tradition]_
+_daily wisdom • [source tradition]_
 
 HISTORY (do not repeat these):
 {history_file_contents}
 ```
 
-### Turkish-Focused Variant
-Same as above but with instruction:
+### Region-Focused Variant
+Same as above but lock to a specific tradition for the day:
 ```
-Today MUST be from the Turkic/Islamic pool: Dede Korkut, Orhon, Göktürk, Selçuklu, Osmanlı, Nasreddin Hoca, Manas, Sufi poets, or Islamic golden age. No Greek/Roman/Stoic today.
+Today MUST be from [REGION] sources only.
+Examples:
+- Turkic/Islamic: Dede Korkut, Orhon, Nasreddin Hoca, Manas, Sufi poets, Islamic golden age
+- African: Sundiata, Mansa Musa, Anansi, Ubuntu, Timbuktu
+- Far East: Sun Tzu, Musashi, Confucius, Laozi, Zen koans
+- Norse: Hávamál, Odin, Ragnarök, Viking sagas
 ```
 
 ### Deep Dive Variant (weekend edition)
@@ -171,11 +189,11 @@ After delivery, append today's entry. The agent reads this file before generatin
 
 ## Customization
 
-### Change the source weights
-Edit the prompt to adjust percentages. Want 80% Turkic? Change the instruction:
+### Bias toward a tradition
+By default all traditions are equal. To favor a specific region, add an instruction:
 ```
-MANDATORY: 80% of picks must be Turkic/Islamic sources. 
-Only use Classical/Far East/Other for 1 in 5 days maximum.
+PREFERENCE: Favor [Turkic/Stoic/Far East/African/etc.] sources 
+when possible, but still mix in other traditions regularly.
 ```
 
 ### Add new sources
