@@ -1,15 +1,15 @@
-# Example: Miyamoto Musashi — Son Düello
+# Example: Miyamoto Musashi — The Last Duel
 
-📜 **Miyamoto Musashi — Gorin no Sho (Beş Çember Kitabı), 1645**
+📜 **Miyamoto Musashi — Gorin no Sho (The Book of Five Rings), 1645**
 
 > *"千日の稽古を鍛とし、万日の稽古を練とす"*
-> — 五輪書 (Gorin no Sho), Su Kitabı
+> — Gorin no Sho, Water Book
 
-🌍 "Bin gün eğitim başlangıçtır, on bin gün eğitim ustalıktır."
+🌍 "A thousand days of training is discipline. Ten thousand days of training is mastery."
 
-**Hikaye:** 1612, Ganryū Adası. Japonya'nın en ünlü kılıç düellosu. Bir tarafta Sasaki Kojirō — "Kuruyan Çiçek" lakaplı, 90 cm'lik uzun katana'sıyla ünlü, tekniği mükemmel, hiç yenilmemiş savaşçı. Diğer tarafta Musashi — 29 yaşında, 60'tan fazla düelloyu kazanmış ama hâlâ "vahşi" sayılan, kılıç okullarının dışında kalan adam. Musashi düelloya bilerek geç gelir — saatlerce. Kojirō sinirlenir, konsantrasyonu bozulur. Musashi tekneyle gelirken kürekten bir ahşap kılıç yontmuştur. Kojirō gerçek çelik, Musashi tahta. Ama Musashi'nin tahta kılıcı Kojirō'nun katanasından birkaç santim daha uzundur. Tek vuruşta bitirir. Kojirō'nun güzel tekniği, Musashi'nin çirkin stratejisine yenilir. Musashi bundan 33 yıl sonra, ölüm döşeğinde Gorin no Sho'yu yazar: "Bir yolu olan adamı, her yolda yenebilirsin."
+**The Story:** 1612, Ganryū Island. Japan's most famous sword duel. On one side: Sasaki Kojirō — called "The Drying Pole" for his unusually long katana, flawless technique, undefeated record. On the other: Musashi — 29 years old, over 60 duels won, but still considered "wild" by the sword schools. Musashi arrived hours late. Deliberately. Kojirō paced the beach, growing furious, losing focus. When Musashi finally arrived by boat, he'd carved a wooden sword from a spare oar during the crossing. Kojirō had real steel. Musashi had driftwood. But Musashi's wooden sword was a few centimeters longer than Kojirō's katana. One strike. Done. Kojirō's beautiful technique lost to Musashi's ugly strategy. Thirty-three years later, on his deathbed, Musashi wrote the Book of Five Rings: "A man with one way can be defeated by a man with no fixed way."
 
-💡 **Modern Bağlantı:** Musashi'nin kürekten kılıç yontması, startup dünyasının "unfair advantage"ı. Kojirō = iyi fonlanmış, iyi eğitimli incumbent. Musashi = bootstrapped, kuralları bilmeyen ama yeni kurallar yaratan challenger. Geç gelme stratejisi = bugünkü "asymmetric warfare" — rakibinin en güçlü silahını (sabır, disiplin) etkisiz kılmak. Amazon'un kitapçılara, Uber'in taksilere, Airbnb'nin otellere yaptığı da bu: rakibin beklediği kılıçla değil, kürekle gel. Musashi'nin "bir yolu olan adam" uyarısı da ilginç — tek stack'e, tek framework'e, tek iş modeline bağımlı olan her şirket için geçerli.
+💡 **Modern Connection:** Musashi carving a sword from an oar is the startup world's "unfair advantage." Kojirō represents the well-funded, well-trained incumbent. Musashi is the bootstrapped challenger who doesn't know the rules and therefore invents new ones. The deliberate lateness is today's "asymmetric warfare" — neutralizing the opponent's greatest strength (patience, discipline) before the fight even starts. Amazon did it to bookstores. Uber did it to taxis. Airbnb did it to hotels: don't bring the sword they expect — bring an oar. And Musashi's warning about "a man with one way" applies to every company locked into a single stack, single framework, or single business model.
 
 ---
-_günün bilgeliği • japon savaş felsefesi_
+_daily wisdom • japanese warrior philosophy_

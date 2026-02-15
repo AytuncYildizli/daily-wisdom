@@ -1,15 +1,15 @@
-# Example: Seneca — Zamanın Kısalığı Üzerine
+# Example: Seneca — On the Shortness of Life
 
-📜 **Lucius Annaeus Seneca — De Brevitate Vitae, MS 49**
+📜 **Lucius Annaeus Seneca — De Brevitate Vitae, 49 AD**
 
 > *"Non exiguum temporis habemus, sed multum perdidimus. Satis longa vita et in maximarum rerum consummationem large data est, si tota bene collocaretur."*
 > — De Brevitate Vitae, I.3
 
-🌍 "Az zamanımız yok, çoğunu harcadık. Hayat yeterince uzun ve büyük işler başarmaya fazlasıyla yeterli — eğer tamamı iyi kullanılırsa."
+🌍 "It is not that we have a short time to live, but that we waste much of it. Life is long enough, and has been given in sufficiently generous measure to accomplish great things — if the whole of it is well invested."
 
-**Hikaye:** MS 49'da Roma'nın en zengin adamlarından biri olan Seneca, kayınpederi Paulinus'a bir mektup yazar. Paulinus, Roma'nın tahıl tedarik sistemini yöneten üst düzey bir bürokrattır — sürekli meşgul, sürekli koşturan. Seneca ona şunu söyler: "İnsanlar hayatın kısalığından şikayet eder ama sorun hayatın kısa olması değil, onu israf etmeleri." Sonra listeyi açar: Başkalarının işleriyle uğraşanlar, sürekli "yarın başlayacağım" diyenler, sonsuz toplantılarla günü bitirenler. En sert eleştiriyi "meşgul insanlara" yapar: "Meşgul adam en az yaşayandır, çünkü meşguliyeti hayatla karıştırır." Seneca'nın kendisi de ikiyüzlü olmakla suçlanmıştır — Nero'nun danışmanı olarak inanılmaz zenginlik biriktirmiş, sonra Nero tarafından intihara zorlanmıştır. Ama belki de tam bu yüzden meşguliyet tuzağını bu kadar iyi tanımlayabilmiştir.
+**The Story:** In 49 AD, one of Rome's wealthiest men wrote a letter to his father-in-law Paulinus, who ran the empire's grain supply system — perpetually busy, perpetually stressed. Seneca told him: "People complain life is short, but the problem isn't shortness — it's waste." Then he made his list: people consumed by other people's business, people who say "I'll start tomorrow" forever, people who fill days with endless meetings. His sharpest line targets "busy people": "The busy man is least alive, because he confuses busyness with living." Seneca himself was famously accused of hypocrisy — as Nero's advisor he accumulated enormous wealth, then Nero forced him to commit suicide. But perhaps that's exactly why he described the busyness trap so well: he was writing from inside it.
 
-💡 **Modern Bağlantı:** 2000 yıl sonra Cal Newport "Deep Work" yazıyor, Tim Ferriss "4-Hour Workweek" çıkarıyor — ikisi de Seneca'nın düzinelerce sayfada söylediği şeyin yeniden keşfi. Slack notification'ları, sonsuz Zoom'lar, "always-on" kültürü — Seneca bunların hepsini MS 49'da tarif etmiş, sadece araç farklı. O zamanki versiyon: istemediğin davete gitmek, başkasının davasında tanıklık etmek, Forum'da dedikodu dinlemek. Ve Seneca'nın en acı paradoksu: bu mektubu yazarken kendisi de Nero'nun sarayında meşguliyet tuzağının tam ortasında oturuyordu. Bazen en iyi uyarılar, tuzağın içinden gelir.
+💡 **Modern Connection:** Two thousand years later, Cal Newport writes "Deep Work" and Tim Ferriss publishes "The 4-Hour Workweek" — both rediscovering what Seneca laid out in a few dozen pages. Slack notifications, infinite Zooms, "always-on" culture — Seneca described all of it in 49 AD, just with different tools. His version: attending unwanted banquets, giving testimony at someone else's trial, listening to gossip at the Forum. And Seneca's bitterest paradox: he wrote this letter while sitting at the center of the busyness trap in Nero's court. Sometimes the best warnings come from inside the trap.
 
 ---
-_günün bilgeliği • roma stoacılığı_
+_daily wisdom • roman stoicism_

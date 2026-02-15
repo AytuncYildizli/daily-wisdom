@@ -2,8 +2,8 @@
 name: daily-wisdom
 description: |
   Daily wisdom, anecdotes & historical stories delivered via cron.
-  Use when: "daily anecdote", "günün hikayesi", "wisdom cron", "daily story", "tarihten bir sayfa", "günlük bilgelik", setting up recurring cultural/historical content delivery.
-  Don't use when: one-off trivia (just answer), news digests (use summarize), tweet drafts (use personal-tweet-drafts).
+  Use when: "daily anecdote", "daily wisdom", "wisdom cron", "daily story", "morning wisdom", setting up recurring cultural/historical content delivery.
+  Don't use when: one-off trivia (just answer directly), news digests, social media posts.
   Outputs: A rich daily message with original-language quote, story, and modern connection. Writes to history file to prevent repeats.
 metadata:
   emoji: 📜
@@ -108,10 +108,12 @@ Same as above but lock to a specific tradition for the day:
 ```
 Today MUST be from [REGION] sources only.
 Examples:
-- Turkic/Islamic: Dede Korkut, Orhon, Nasreddin Hoca, Manas, Sufi poets, Islamic golden age
 - African: Sundiata, Mansa Musa, Anansi, Ubuntu, Timbuktu
+- Classical: Seneca, Marcus Aurelius, Diogenes, Heraclitus
 - Far East: Sun Tzu, Musashi, Confucius, Laozi, Zen koans
 - Norse: Hávamál, Odin, Ragnarök, Viking sagas
+- Islamic Golden Age: Ibn Sina, Al-Khwarizmi, Mevlana, Ibn Battuta
+- Turkic/Central Asian: Dede Korkut, Orhon, Nasreddin Hoca, Manas
 ```
 
 ### Deep Dive Variant (weekend edition)
@@ -202,13 +204,10 @@ when possible, but still mix in other traditions regularly.
 Just add to the prompt's source list. The agent will incorporate them.
 
 ### Change language
-The default output mixes Turkish and English. For full English:
+The default output is English with original-language quotes. To localize:
 ```
-Write entirely in English. Translate all quotes to English.
-```
-For full Turkish:
-```
-Tamamını Türkçe yaz. Alıntıları hem orijinal dilde hem Türkçe ver.
+Write entirely in [Spanish/German/French/Japanese/etc.]. 
+Translate all quotes to [target language].
 ```
 
 ### Multiple daily sends
@@ -216,33 +215,24 @@ Create separate crons: morning wisdom (07:30) + evening reflection (21:00) with 
 
 ## Example Outputs
 
-See the `examples/` directory for 17 sample outputs across formats:
+See `examples/` for 11 samples across civilizations:
 
-**Standard format** (quote → story → modern connection):
-- `turkic-kan-turali.md` — Warrior couple vs 3 beasts (Amazon meets Hercules)
-- `turkic-basat-tepegoz.md` — Turkish Polyphemus (Odyssey parallel)
-- `turkic-deli-dumrul.md` — Deli Dumrul vs Azrael (Death vs Love)
-- `turkic-orhon.md` — Bilge Kağan's stone inscription (platform independence)
-- `turkic-nasreddin.md` — "Ya tutarsa?" (world's shortest startup manifesto)
-- `mythology-gilgamesh.md` — Oldest story, first pivot
-- `classical-seneca.md` — Seneca on time waste
+- `african-sundiata.md` — Mali Empire founder + earliest human rights charter
 - `classical-marcus-aurelius.md` — Obstacle is the way (the original)
-- `fareast-musashi.md` — Sword from an oar
-- `islamic-ibn-sina.md` — First biofeedback experiment
-- `sufi-mevlana.md` — The wound is where light enters
-- `african-sundiata.md` — Crippled boy who built an empire + earliest human rights charter
-- `indian-chanakya.md` — Kingmaker's 2000-year-lost playbook
+- `classical-seneca.md` — Time is the only non-renewable resource
+- `fareast-musashi.md` — Winning a duel with a wooden oar
+- `indian-chanakya.md` — Statecraft playbook lost for 2000 years
+- `islamic-ibn-sina.md` — First biofeedback experiment (1025 AD)
+- `mythology-anansi.md` — Spider who bought all stories from the Sky God
+- `mythology-gilgamesh.md` — Oldest story in human history
 - `norse-havamal.md` — Odin's price for wisdom
-
-**Alternative formats:**
-- `format-thread.md` — Twitter/X thread style (Mansa Musa)
-- `format-thisday.md` — "This Day in History" (Galileo)
-- `zen-gateless-gate.md` — Minimal koan, no modern connection
+- `turkic-nasreddin.md` — "Ya tutarsa?" (shortest startup manifesto)
+- `format-thread.md` — Twitter/X thread format (Mansa Musa)
 
 ## Tips for Quality
 
-1. **Specificity kills generic**: "In 1040, at Dandanakan..." beats "The Seljuks once fought..."
-2. **Original language quotes are magic**: Even if the reader doesn't speak the language, seeing `"Türk bodun yok bolmazun"` in Göktürk hits different
-3. **The modern connection must be surprising**: Don't just say "this is still relevant." Show HOW. "Selcen Hatun was pair-programming before pair-programming existed."
-4. **Vary the tone**: Some days profound, some days funny (Nasreddin Hoca), some days dark (Gilgamesh)
-5. **Weekend = deep dive**: Use the deep dive variant for Saturdays
+1. **Specificity kills generic**: "In 1235, at the Battle of Kirina..." beats "An empire was built..."
+2. **Original language quotes hit different**: Even unreadable scripts create emotional resonance
+3. **Modern connections must surprise**: Not "this is relevant" but *how* — show the unexpected parallel
+4. **Vary the tone**: Profound → funny → dark → tactical → minimal
+5. **Weekend = deep dive**: Use the deep dive variant for longer, richer stories

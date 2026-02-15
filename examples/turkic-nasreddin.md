@@ -1,15 +1,15 @@
-# Example: Nasreddin Hoca — Göl ve Yoğurt
+# Example: Nasreddin Hoca — The Lake and the Yogurt
 
-📜 **Nasreddin Hoca — Anadolu Halk Geleneği, ~13. yy**
+📜 **Nasreddin Hoca — Anatolian Folk Tradition, ~13th century**
 
 > *"Ya tutarsa?"*
-> — Nasreddin Hoca, göle yoğurt çalarken
+> — Nasreddin Hoca, stirring yogurt into a lake
 
-🌍 (Zaten Türkçe!)
+🌍 "What if it works?"
 
-**Hikaye:** Bir gün komşusu, Nasreddin Hoca'yı gölün kenarında bir şeyler yaparken görür. Yaklaşınca Hoca'nın bir kaşık yoğurdu göle karıştırdığını fark eder. "Hoca ne yapıyorsun?" der. Hoca: "Göle yoğurt çalıyorum, mayalıyorum." Komşu güler: "Hoca, göl yoğurt olur mu hiç?" Hoca cevap verir: "Ya tutarsa?" Bu üç kelimelik cevap, Anadolu'nun en ünlü felsefesi olmuştur. Ama Nasreddin Hoca'nın dehasının asıl katmanı şu: O bir "aptal" numarası yapan bilge. Anadolu halkı, Moğol istilası, Selçuklu çöküşü ve sürekli savaşlar arasında hayatta kalırken Hoca'nın hikayeleri hem teselli hem direniştir. Güçlülere karşı mizahla, mantıksızlığa karşı mantıksızlıkla, çaresizliğe karşı umutla cevap verir. Göle yoğurt çalmak saçma mı? Evet. Ama denemekten vazgeçmek daha mı akıllı?
+**The Story:** One day, a neighbor spotted Nasreddin Hoca crouching at the edge of a lake, spooning yogurt into the water. "Hoca, what are you doing?" The Hoca replied calmly: "I'm fermenting the lake." The neighbor laughed: "A lake can't turn into yogurt!" Hoca shrugged and said three words: "Ya tutarsa?" — "What if it works?" Those three words became one of the most quoted phrases in Anatolian wisdom. But the real genius of Nasreddin Hoca goes deeper: he's a wise man disguised as a fool. Living through the Mongol invasions, the collapse of the Seljuk state, and constant warfare, Hoca's stories gave people both comfort and resistance. He answered power with humor, absurdity with absurdity, and hopelessness with irrational optimism. Is spooning yogurt into a lake absurd? Yes. But is giving up smarter?
 
-💡 **Modern Bağlantı:** "Ya tutarsa?" — dünyanın en kısa lean startup manifesti. Her Y Combinator başvurusu, her garage projesi, her "bunu kimse kullanmaz" dedikleri fikir bu üç kelimenin ürünü. Airbnb: "İnsanlar yabancıların evinde kalır mı? Ya tutarsa." Bitcoin: "Para devletsiz olur mu? Ya tutarsa." SpaceX: "Roket geri iner mi? Ya tutarsa." Nasreddin Hoca'nın komşusu her hikayede "bu olmaz" diyen kişi — VC'lerin %99'u, "akıllı" analistler, "gerçekçi" danışmanlar. Hoca ise her seferinde kaşığıyla göle yoğurt çalmaya devam ediyor. Ve 800 yıldır tarih, komşuyu değil Hoca'yı haklı çıkarıyor.
+💡 **Modern Connection:** "What if it works?" — the world's shortest lean startup manifesto. Every Y Combinator application, every garage project, every "nobody will use this" idea runs on these three words. Airbnb: "Will strangers sleep in each other's homes? What if it works?" Bitcoin: "Can money exist without a government? What if it works?" SpaceX: "Can a rocket land itself? What if it works?" Hoca's neighbor is the voice in every founder's head — the "reasonable" person who explains why it can't work. And for 800 years, history has sided with the man spooning yogurt into a lake, not with the neighbor who laughed.
 
 ---
-_günün bilgeliği • anadolu halk geleneği_
+_daily wisdom • anatolian folk tradition_

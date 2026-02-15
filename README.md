@@ -2,170 +2,129 @@
 
 ![banner](./banner.png)
 
-> Your AI agent generates a unique historical anecdote every morning — from 100+ sources across 7 civilizations. Never the same story twice.
+> AI-generated historical anecdotes from 100+ sources across every major civilization. A new story every day, never repeats.
 
-An [OpenClaw](https://github.com/openclaw/openclaw) skill that turns your AI agent into a cultural historian. Every day it **generates a completely new story** from a pool of 100+ historical figures, epics, and philosophical traditions — Turkic epics, Stoic philosophy, Islamic golden age, Far Eastern strategy, African empires, ancient mythology, and more. Each story includes an original-language quote, a vivid narrative, and a surprising modern connection. A history file ensures **zero repeats** across months.
+A prompt system that turns any LLM into a cultural historian. Each day it generates a unique story with an original-language quote, a vivid narrative, and a surprising modern connection.
 
-## ✨ Features
+## 🚀 Use It Anywhere
 
-- **🤖 AI-generated, not static** — Your agent creates a brand new story every day from a pool of 100+ sources. Not a database of pre-written posts.
-- **🌍 7 civilizations** — Turkic, Islamic, Classical, Far East, African, Norse, Ancient — all drawn equally
-- **🔄 Infinite variety, zero repeats** — History file tracking + massive source pool = months of unique content
-- **💡 Modern connections** — Every story links to startups, tech, leadership, or daily life
-- **📝 Original language quotes** — Göktürk, Latin, Arabic, Japanese, Ancient Greek, Persian, Mandinka
-- **🎭 Multiple formats** — Standard, thread, "this day in history", minimal/koan
-- **📱 Multi-channel** — WhatsApp, Telegram, Slack, Discord — anywhere OpenClaw delivers
+### With ChatGPT / Claude / any LLM
+Copy the prompt from [`SKILL.md`](./SKILL.md#standard-daily-recommended) and paste it into any AI chat. That's it. No install, no dependencies.
+
+### With OpenClaw (automated daily delivery)
+Set it up as a cron skill for automated daily messages to WhatsApp, Telegram, Slack, or Discord. See [setup instructions](#automated-setup-openclaw).
+
+### With any cron + LLM API
+Use the prompt template with any scheduling system + API call (GitHub Actions, n8n, Make, etc.).
+
+## ✨ What It Does
+
+- **Generates a new story every day** from a pool of 100+ historical figures, epics, and traditions
+- **Original-language quotes** — Latin, Arabic, Japanese, Ancient Greek, Old Norse, Sanskrit, Mandinka, and more
+- **Modern connections** — each story links to something relevant today
+- **Never repeats** — a history file tracks what's been covered
+- **Multiple formats** — standard, Twitter thread, minimal, deep dive
 
 ## 📦 Example Output
 
 ```
-📜 Nasreddin Hoca — Anadolu Halk Geleneği, ~13. yy
+📜 Anansi the Spider — Ashanti Oral Tradition, West Africa
 
-> "Ya tutarsa?"
-> — Nasreddin Hoca, göle yoğurt çalarken
+> "Ananse, the spider, owns all stories that are told."
+> — Ashanti saying
 
-Hikaye: Bir gün komşusu Hoca'yı gölün kenarında görür.
-Hoca bir kaşık yoğurdu göle karıştırmaktadır. "Hoca ne
-yapıyorsun?" "Göle yoğurt çalıyorum." "Göl yoğurt olur
-mu hiç?" Hoca cevap verir: "Ya tutarsa?"...
+The Story: Long ago, all stories belonged to Nyame, the Sky God.
+Anansi asked to buy them. Nyame named an impossible price: capture
+a python, hornets, an invisible fairy, and a leopard. Anansi used
+no force — only cleverness. He tricked each one into trapping
+themselves...
 
-💡 Modern Bağlantı: "Ya tutarsa?" — dünyanın en kısa
-lean startup manifesti. Airbnb: "İnsanlar yabancıların
-evinde kalır mı? Ya tutarsa." Bitcoin: "Para devletsiz
-olur mu? Ya tutarsa."...
+💡 Modern Connection: Anansi is the original hacker — he doesn't
+fight stronger opponents, he exploits their assumptions. Every
+social engineering attack follows the Anansi pattern...
 ```
 
-The skill **generates new stories daily** — these are just samples of what it produces. See all 17 example outputs in [`examples/`](./examples/).
+See 11 examples across civilizations in [`examples/`](./examples/).
 
-## 🚀 Quick Start
-
-### 1. Install the skill
-Copy this directory into your OpenClaw workspace:
-```bash
-cd ~/your-openclaw-workspace
-git clone https://github.com/AytuncYildizli/daily-wisdom.git skills/daily-wisdom
-```
-
-### 2. Create history file
-```bash
-cp skills/daily-wisdom/history.md memory/anecdote-history.md
-```
-
-### 3. Set up the cron job
-In your OpenClaw session, ask your agent:
-```
-Set up a daily wisdom cron job at 07:30 my timezone using the 
-daily-wisdom skill. Deliver to my main chat.
-```
-
-Or configure manually — see [SKILL.md](./SKILL.md) for the full cron configuration.
-
-## 📂 Structure
+## 📂 Repository
 
 ```
 daily-wisdom/
-├── README.md          ← You are here
-├── SKILL.md           ← OpenClaw skill definition + prompt templates
-├── history.md         ← Repeat-prevention tracker (template)
-└── examples/
-    │
-    ├── ── Turkic & Central Asian ──
-    ├── turkic-kan-turali.md         ← Warrior couple vs 3 beasts
-    ├── turkic-basat-tepegoz.md      ← Turkish Polyphemus
-    ├── turkic-deli-dumrul.md        ← Death vs Love  
-    ├── turkic-orhon.md              ← Bilge Kağan's stone inscription
-    ├── turkic-nasreddin.md          ← "Ya tutarsa?" — world's shortest startup manifesto
-    │
-    ├── ── Mythology (cross-civilization) ──
-    ├── mythology-gilgamesh.md       ← Oldest story, first pivot
-    ├── mythology-prometheus.md      ← Fire thief — every whistleblower's ancestor
-    ├── mythology-ragnarok.md        ← Gods who knew they'd lose and fought anyway
-    ├── mythology-anansi.md          ← Spider who bought all stories (first hacker)
-    ├── mythology-maui.md            ← Trickster who lassoed the sun (Polynesia)
-    │
-    ├── ── Classical & Islamic ──
-    ├── classical-seneca.md          ← Time is the only non-renewable
-    ├── classical-marcus-aurelius.md ← Obstacle is the way (the original)
-    ├── islamic-ibn-sina.md          ← First biofeedback experiment
-    ├── sufi-mevlana.md              ← The wound is where light enters
-    │
-    ├── ── Far East, African, Indian ──
-    ├── fareast-musashi.md           ← Sword from an oar
-    ├── african-sundiata.md          ← Crippled boy who built an empire
-    ├── indian-chanakya.md           ← Kingmaker's 2000-year-lost playbook
-    ├── norse-havamal.md             ← Odin's price for wisdom
-    │
-    ├── ── Alternative Formats ──
-    ├── format-thread.md             ← Twitter/X thread (Mansa Musa)
-    ├── format-thisday.md            ← "This Day in History" (Galileo)
-    └── zen-gateless-gate.md         ← Minimal koan — no modern connection
+├── README.md       ← You are here
+├── SKILL.md        ← Prompt templates (the actual product)
+├── history.md      ← Repeat tracker template
+└── examples/       ← 11 sample outputs
+    ├── african-sundiata.md          ← Mali Empire
+    ├── classical-marcus-aurelius.md ← Rome
+    ├── classical-seneca.md          ← Rome
+    ├── fareast-musashi.md           ← Japan
+    ├── indian-chanakya.md           ← India
+    ├── islamic-ibn-sina.md          ← Persia
+    ├── mythology-anansi.md          ← West Africa
+    ├── mythology-gilgamesh.md       ← Sumer
+    ├── norse-havamal.md             ← Scandinavia
+    ├── turkic-nasreddin.md          ← Anatolia
+    └── format-thread.md             ← Twitter thread format
 ```
 
 ## 🎯 Source Pool
 
-All traditions drawn equally — no fixed percentages. Maximum variety, no back-to-back repeats from the same tradition.
+All traditions drawn equally — the agent maximizes variety across the full pool.
 
 | Region | Key Sources |
 |--------|-------------|
-| **Turkic & Central Asian** | Dede Korkut, Orhon Yazıtları, Manas, Nasreddin Hoca, Mete Han, Attila |
-| **Islamic Golden Age & Sufi** | Ibn Sina, Al-Khwarizmi, Mevlana, Yunus Emre, Ibn Battuta, Ibn Khaldun |
-| **Classical Mediterranean** | Seneca, Marcus Aurelius, Epictetus, Heraclitus, Diogenes, Plutarch |
+| **Classical** | Seneca, Marcus Aurelius, Epictetus, Heraclitus, Diogenes, Socrates |
 | **Far East** | Sun Tzu, Musashi, Confucius, Laozi, Chanakya, Zen koans |
-| **Ancient & Pre-Classical** | Gilgamesh, Egyptian (Ptahhotep), Norse (Hávamál), Sumerian, Zoroastrian |
-| **African & Indigenous** | Sundiata Keita, Mansa Musa, Anansi, Ubuntu, Timbuktu scholars |
+| **African** | Sundiata Keita, Mansa Musa, Anansi, Ubuntu, Timbuktu scholars |
+| **Islamic Golden Age** | Ibn Sina, Al-Khwarizmi, Ibn Khaldun, Mevlana, Ibn Battuta |
+| **Ancient & Myth** | Gilgamesh, Prometheus, Egyptian wisdom, Zoroastrian, Sumerian proverbs |
+| **Norse & Celtic** | Hávamál, Odin, Ragnarök, Viking sagas |
+| **Turkic & Central Asian** | Dede Korkut, Orhon inscriptions, Manas, Nasreddin Hoca |
+| **Polynesian & Indigenous** | Māui, Aboriginal Dreamtime |
 | **Renaissance & Modern** | Machiavelli, Montaigne, Leonardo, Ada Lovelace, Tesla |
 
 ## ⚙️ Customization
 
-### Adjust source weights
-In the cron prompt, change the instruction:
+### Favor a region
 ```
-MANDATORY: 80% Turkic/Islamic sources. Max 1 in 5 from other pools.
+PREFERENCE: Favor [Classical/Far East/African/Norse/etc.] sources,
+but still mix in other traditions regularly.
 ```
 
 ### Change language
 ```
-# Full English
-Write entirely in English. Translate all quotes to English.
-
-# Full Turkish  
-Tamamını Türkçe yaz. Alıntıları hem orijinal dilde hem Türkçe ver.
+Write entirely in [Spanish/German/French/etc.].
+Translate all quotes to [target language].
 ```
 
 ### Weekend deep dives
-Add a second cron with the Deep Dive variant (10-15 sentences, 2-3 quotes, multiple modern parallels). See SKILL.md for the template.
+Use the Deep Dive variant in SKILL.md — longer stories, multiple quotes, more context.
 
-### Multiple daily sends
-- Morning (07:30): Standard wisdom
-- Evening (21:00): Reflection prompt variant
+## <a name="automated-setup-openclaw"></a>🤖 Automated Setup (OpenClaw)
+
+1. Copy this repo into your workspace: `git clone https://github.com/AytuncYildizli/daily-wisdom.git skills/daily-wisdom`
+2. Create history file: `cp skills/daily-wisdom/history.md memory/anecdote-history.md`
+3. Ask your agent: *"Set up a daily wisdom cron at 07:30 using the daily-wisdom skill"*
+
+See [`SKILL.md`](./SKILL.md) for full cron configuration and all prompt templates.
 
 ## 🧪 Quality Philosophy
 
-1. **Specificity > generality**: "In 735, on a stone in the Orhon Valley..." beats "The Turks once wrote..."
-2. **Original language = magic**: Even unreadable scripts create emotional impact
+1. **Specificity > generality**: "In 1235, at the Battle of Kirina..." beats "An African king once..."
+2. **Original language = impact**: Even unreadable scripts create emotional resonance
 3. **Modern connections must surprise**: Not "this is relevant" but *how* it's relevant
-4. **Vary the emotional register**: Profound → funny → dark → inspiring → tactical
-5. **The best stories contain paradox**: Seneca writing about moderation from Nero's palace
+4. **Vary the register**: Profound → funny → dark → tactical → minimal
 
 ## 🤝 Contributing
 
-Add new example outputs to `examples/`. The naming convention:
-```
-{region}-{subject}.md
-```
+Add examples: `examples/{region}-{subject}.md`
 
-Regions: `turkic`, `classical`, `fareast`, `mythology`, `islamic`, `sufi`, `norse`, `renaissance`
-
-PRs welcome for:
-- New source traditions (African, Mesoamerican, Indian, etc.)
-- Better modern connections
-- Translations of prompt templates
-- Additional delivery format variants
+PRs welcome for new traditions, better modern connections, translations, and format variants.
 
 ## 📄 License
 
-MIT — use it, fork it, make it yours.
+MIT
 
 ---
 
-*Built for [OpenClaw](https://github.com/openclaw/openclaw) 🐾 • Find more skills at [ClawHub](https://clawhub.com)*
+*Works with any LLM. Optionally integrates with [OpenClaw](https://github.com/openclaw/openclaw) for automated daily delivery.*
