@@ -1,5 +1,7 @@
 # 📜 Daily Wisdom
 
+![banner](./banner.png)
+
 > A daily dose of historical anecdotes, ancient philosophy, and cross-civilizational insights — delivered by your AI agent.
 
 An [OpenClaw](https://github.com/openclaw/openclaw) skill that delivers a rich daily wisdom message drawing from Turkic epics, Stoic philosophy, Islamic golden age, Far Eastern strategy, ancient mythology, and more. Zero repeats, weighted source diversity, and a modern tech/startup connection with every story.
@@ -66,17 +68,27 @@ daily-wisdom/
 ├── SKILL.md           ← OpenClaw skill definition + prompt templates
 ├── history.md         ← Repeat-prevention tracker (template)
 └── examples/
-    ├── turkic-kan-turali.md       ← Warrior couple vs 3 beasts
-    ├── turkic-basat-tepegoz.md    ← Turkish Polyphemus
-    ├── turkic-deli-dumrul.md      ← Death vs Love
-    ├── turkic-orhon.md            ← Bilge Kağan's stone inscription
-    ├── turkic-nasreddin.md        ← "Ya tutarsa?" — shortest startup manifesto
-    ├── mythology-gilgamesh.md     ← Oldest story, first pivot
-    ├── classical-seneca.md        ← Time is the only non-renewable
-    ├── classical-marcus-aurelius.md ← Obstacle is the way (original)
-    ├── fareast-musashi.md         ← Sword from an oar
-    ├── islamic-ibn-sina.md        ← First biofeedback experiment
-    └── sufi-mevlana.md            ← The wound is where light enters
+    │
+    ├── Standard Format (quote → story → modern connection)
+    ├── turkic-kan-turali.md         ← Warrior couple vs 3 beasts
+    ├── turkic-basat-tepegoz.md      ← Turkish Polyphemus
+    ├── turkic-deli-dumrul.md        ← Death vs Love
+    ├── turkic-orhon.md              ← Bilge Kağan's stone inscription
+    ├── turkic-nasreddin.md          ← "Ya tutarsa?" — world's shortest startup manifesto
+    ├── mythology-gilgamesh.md       ← Oldest story, first pivot
+    ├── classical-seneca.md          ← Time is the only non-renewable
+    ├── classical-marcus-aurelius.md ← Obstacle is the way (the original)
+    ├── fareast-musashi.md           ← Sword from an oar
+    ├── islamic-ibn-sina.md          ← First biofeedback experiment
+    ├── sufi-mevlana.md              ← The wound is where light enters
+    ├── african-sundiata.md          ← The crippled boy who built an empire
+    ├── indian-chanakya.md           ← The kingmaker's 2000-year-lost playbook
+    ├── norse-havamal.md             ← Odin's price for wisdom
+    │
+    ├── Alternative Formats
+    ├── format-thread.md             ← Twitter/X thread style (Mansa Musa)
+    ├── format-thisday.md            ← "This Day in History" (Galileo)
+    └── zen-gateless-gate.md         ← Minimal/koan style — no modern connection
 ```
 
 ## 🎯 Source Pool

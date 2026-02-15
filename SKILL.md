@@ -214,17 +214,28 @@ Create separate crons: morning wisdom (07:30) + evening reflection (21:00) with 
 
 ## Example Outputs
 
-See the `examples/` directory for sample outputs:
-- `turkic-basat-tepegoz.md` — Basat & Tepegöz (Türk Polyphemus)
-- `turkic-deli-dumrul.md` — Deli Dumrul vs Azrael
-- `turkic-kan-turali.md` — Kan Turalı & Selcen Hatun (Amazon warrior couple)
-- `turkic-orhon.md` — Bilge Kağan's inscription
-- `mythology-gilgamesh.md` — Gilgamesh & mortality
-- `classical-seneca.md` — Seneca on time
-- `classical-marcus-aurelius.md` — Marcus Aurelius obstacle doctrine
-- `fareast-musashi.md` — Miyamoto Musashi's last duel
-- `islamic-ibn-sina.md` — Avicenna's Canon of Medicine
-- `sufi-mevlana.md` — Rumi on the wound and the light
+See the `examples/` directory for 17 sample outputs across formats:
+
+**Standard format** (quote → story → modern connection):
+- `turkic-kan-turali.md` — Warrior couple vs 3 beasts (Amazon meets Hercules)
+- `turkic-basat-tepegoz.md` — Turkish Polyphemus (Odyssey parallel)
+- `turkic-deli-dumrul.md` — Deli Dumrul vs Azrael (Death vs Love)
+- `turkic-orhon.md` — Bilge Kağan's stone inscription (platform independence)
+- `turkic-nasreddin.md` — "Ya tutarsa?" (world's shortest startup manifesto)
+- `mythology-gilgamesh.md` — Oldest story, first pivot
+- `classical-seneca.md` — Seneca on time waste
+- `classical-marcus-aurelius.md` — Obstacle is the way (the original)
+- `fareast-musashi.md` — Sword from an oar
+- `islamic-ibn-sina.md` — First biofeedback experiment
+- `sufi-mevlana.md` — The wound is where light enters
+- `african-sundiata.md` — Crippled boy who built an empire + earliest human rights charter
+- `indian-chanakya.md` — Kingmaker's 2000-year-lost playbook
+- `norse-havamal.md` — Odin's price for wisdom
+
+**Alternative formats:**
+- `format-thread.md` — Twitter/X thread style (Mansa Musa)
+- `format-thisday.md` — "This Day in History" (Galileo)
+- `zen-gateless-gate.md` — Minimal koan, no modern connection
 
 ## Tips for Quality
 
