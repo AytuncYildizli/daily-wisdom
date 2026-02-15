@@ -41,7 +41,7 @@ See all 10 example outputs in [`examples/`](./examples/).
 Copy this directory into your OpenClaw workspace:
 ```bash
 cd ~/your-openclaw-workspace
-git clone https://github.com/anthropics/daily-wisdom.git skills/daily-wisdom
+git clone https://github.com/AytuncYildizli/daily-wisdom.git skills/daily-wisdom
 ```
 
 ### 2. Create history file
