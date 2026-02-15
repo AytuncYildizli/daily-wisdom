@@ -1,0 +1,217 @@
+---
+name: daily-wisdom
+description: |
+  Daily wisdom, anecdotes & historical stories delivered via cron.
+  Use when: "daily anecdote", "günün hikayesi", "wisdom cron", "daily story", "tarihten bir sayfa", "günlük bilgelik", setting up recurring cultural/historical content delivery.
+  Don't use when: one-off trivia (just answer), news digests (use summarize), tweet drafts (use personal-tweet-drafts).
+  Outputs: A rich daily message with original-language quote, story, and modern connection. Writes to history file to prevent repeats.
+metadata:
+  emoji: 📜
+  category: content
+  tags: [wisdom, history, culture, cron, daily, anecdote, stoic, turkish, mythology]
+---
+
+# Daily Wisdom
+
+Deliver a daily historical anecdote, philosophical insight, or cultural story as a recurring cron job. Designed for depth, variety, and zero repeats.
+
+## What It Does
+
+Each day, the agent:
+1. Checks the **history file** to avoid repeating topics
+2. Picks from a **weighted source pool** spanning civilizations
+3. Writes a rich message: original-language quote → translation → story (5-8 sentences) → modern connection
+4. Delivers via the configured channel (WhatsApp, Telegram, Slack, etc.)
+5. Logs the topic to history
+
+## Source Pool (Weighted)
+
+### Turkic & Islamic World (40% weight)
+- **Dede Korkut Destanları** — Kan Turalı, Basat & Tepegöz, Deli Dumrul, Bamsı Beyrek, Salur Kazan
+- **Orhon Yazıtları** — Bilge Kağan, Kül Tigin, Tonyukuk
+- **Göktürk & Hun** — Mete Han, Bumin Kağan, İstemi Yabgu, Attila
+- **Selçuklu & Osmanlı** — Alparslan, Fatih, Mimar Sinan, Piri Reis, Evliya Çelebi, Barbaros
+- **Nasreddin Hoca** — Timeless wit and paradox
+- **Manas Destanı** — Kırgız epic, largest oral tradition in the world
+- **Yunus Emre, Mevlana, Hacı Bektaş Veli** — Sufi wisdom
+- **İbn-i Sina, El-Harezmi, İbn Haldun** — Islamic golden age science & philosophy
+- **Divan-ı Hikmet (Ahmet Yesevi)** — Turkic Sufi poetry
+
+### Classical Mediterranean (20%)
+- **Stoicism** — Seneca, Marcus Aurelius, Epictetus
+- **Greek** — Heraclitus, Diogenes, Thales, Aristotle
+- **Roman** — Cicero, Cato, Plutarch
+
+### Far East (15%)
+- **Sun Tzu** — Art of War
+- **Miyamoto Musashi** — Book of Five Rings
+- **Confucius, Laozi** — Eastern philosophy
+- **Zen koans** — Paradox and insight
+
+### Ancient & Pre-Classical (15%)
+- **Gilgamesh** — The oldest story
+- **Egyptian** — Ptahhotep, Book of the Dead
+- **Norse** — Hávamál, Odin's wisdom
+- **Sumerian proverbs**
+
+### Renaissance & Early Modern (10%)
+- **Machiavelli, Leonardo, Montaigne**
+- **Ibn Battuta** — The greatest traveler
+- **Copernicus, Galileo** — Paradigm shifts
+
+## Prompt Templates
+
+### Standard Daily (recommended)
+```
+You are a cultural historian and storyteller. Deliver today's wisdom.
+
+RULES:
+1. Pick a source from the weighted pool. Favor underrepresented sources.
+2. DO NOT repeat anything from the history file below.
+3. Format:
+
+📜 **[Title — Person/Source, Era]**
+
+> *"[Original language quote]"*
+> — [Attribution]
+
+🌍 [Turkish/English translation if quote is in another language]
+
+**Hikaye:** [5-8 sentence story. Vivid, specific details. Not Wikipedia summary — make it alive. Include a surprising fact or lesser-known angle.]
+
+💡 **Modern Bağlantı:** [2-3 sentences connecting to today — startups, tech, leadership, daily life. Make it feel relevant, not forced.]
+
+---
+_günün bilgeliği • [source tradition]_
+
+HISTORY (do not repeat these):
+{history_file_contents}
+```
+
+### Turkish-Focused Variant
+Same as above but with instruction:
+```
+Today MUST be from the Turkic/Islamic pool: Dede Korkut, Orhon, Göktürk, Selçuklu, Osmanlı, Nasreddin Hoca, Manas, Sufi poets, or Islamic golden age. No Greek/Roman/Stoic today.
+```
+
+### Deep Dive Variant (weekend edition)
+```
+Today is a DEEP DIVE. Pick one topic and go long:
+- 10-15 sentences instead of 5-8
+- Include 2-3 quotes instead of 1
+- Add historical context and aftermath
+- Connect to at least 2 modern parallels
+```
+
+## Setup
+
+### 1. Create the history file
+```bash
+touch memory/anecdote-history.md
+```
+
+Or with initial content:
+```markdown
+# Daily Wisdom History
+<!-- One entry per line: YYYY-MM-DD | Source | Topic -->
+2026-02-15 | Seneca | De Brevitate Vitae - time is the only non-renewable resource
+2026-02-16 | Dede Korkut | Kan Turalı & Selcen Hatun - warrior couple vs 3 beasts
+```
+
+### 2. Create the cron job
+```
+Use the cron tool to create a daily job:
+
+Schedule: cron expression for your preferred time (e.g., "30 7 * * *" for 07:30)
+Timezone: Your timezone (e.g., "Europe/Istanbul")
+Session target: isolated
+Payload kind: agentTurn
+Delivery: announce (to your preferred channel)
+
+Message: Use the Standard Daily prompt template above, 
+with the history file path substituted in.
+```
+
+### 3. Example cron configuration
+```json
+{
+  "name": "daily-wisdom",
+  "schedule": {
+    "kind": "cron",
+    "expr": "30 7 * * *",
+    "tz": "Europe/Istanbul"
+  },
+  "sessionTarget": "isolated",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "[Standard Daily prompt with history]"
+  },
+  "delivery": {
+    "mode": "announce"
+  },
+  "enabled": true
+}
+```
+
+## History File Format
+
+The history file prevents repeats. Each line = one delivered anecdote:
+
+```markdown
+# Daily Wisdom History
+2026-02-10 | Marcus Aurelius | Meditations Book 5 - obstacle is the way
+2026-02-11 | Dede Korkut | Deli Dumrul - challenging Azrael, learning love > death
+2026-02-12 | Sun Tzu | Empty fort strategy - Zhuge Liang bluff
+2026-02-13 | Bilge Kağan | Orhon inscription - "Türk milleti yok olacaktı"
+2026-02-14 | Nasreddin Hoca | Soup of the soup - diminishing returns
+2026-02-15 | Gilgamesh | Utnapishtim - accepting mortality
+```
+
+After delivery, append today's entry. The agent reads this file before generating to ensure no repeats across months.
+
+## Customization
+
+### Change the source weights
+Edit the prompt to adjust percentages. Want 80% Turkic? Change the instruction:
+```
+MANDATORY: 80% of picks must be Turkic/Islamic sources. 
+Only use Classical/Far East/Other for 1 in 5 days maximum.
+```
+
+### Add new sources
+Just add to the prompt's source list. The agent will incorporate them.
+
+### Change language
+The default output mixes Turkish and English. For full English:
+```
+Write entirely in English. Translate all quotes to English.
+```
+For full Turkish:
+```
+Tamamını Türkçe yaz. Alıntıları hem orijinal dilde hem Türkçe ver.
+```
+
+### Multiple daily sends
+Create separate crons: morning wisdom (07:30) + evening reflection (21:00) with different prompt variants.
+
+## Example Outputs
+
+See the `examples/` directory for sample outputs:
+- `turkic-basat-tepegoz.md` — Basat & Tepegöz (Türk Polyphemus)
+- `turkic-deli-dumrul.md` — Deli Dumrul vs Azrael
+- `turkic-kan-turali.md` — Kan Turalı & Selcen Hatun (Amazon warrior couple)
+- `turkic-orhon.md` — Bilge Kağan's inscription
+- `mythology-gilgamesh.md` — Gilgamesh & mortality
+- `classical-seneca.md` — Seneca on time
+- `classical-marcus-aurelius.md` — Marcus Aurelius obstacle doctrine
+- `fareast-musashi.md` — Miyamoto Musashi's last duel
+- `islamic-ibn-sina.md` — Avicenna's Canon of Medicine
+- `sufi-mevlana.md` — Rumi on the wound and the light
+
+## Tips for Quality
+
+1. **Specificity kills generic**: "In 1040, at Dandanakan..." beats "The Seljuks once fought..."
+2. **Original language quotes are magic**: Even if the reader doesn't speak the language, seeing `"Türk bodun yok bolmazun"` in Göktürk hits different
+3. **The modern connection must be surprising**: Don't just say "this is still relevant." Show HOW. "Selcen Hatun was pair-programming before pair-programming existed."
+4. **Vary the tone**: Some days profound, some days funny (Nasreddin Hoca), some days dark (Gilgamesh)
+5. **Weekend = deep dive**: Use the deep dive variant for Saturdays
