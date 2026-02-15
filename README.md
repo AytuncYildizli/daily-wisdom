@@ -2,18 +2,18 @@
 
 ![banner](./banner.png)
 
-> A daily dose of historical anecdotes, ancient philosophy, and cross-civilizational insights — delivered by your AI agent.
+> Your AI agent generates a unique historical anecdote every morning — from 100+ sources across 7 civilizations. Never the same story twice.
 
-An [OpenClaw](https://github.com/openclaw/openclaw) skill that delivers a rich daily wisdom message drawing from Turkic epics, Stoic philosophy, Islamic golden age, Far Eastern strategy, ancient mythology, and more. Zero repeats, weighted source diversity, and a modern tech/startup connection with every story.
+An [OpenClaw](https://github.com/openclaw/openclaw) skill that turns your AI agent into a cultural historian. Every day it **generates a completely new story** from a pool of 100+ historical figures, epics, and philosophical traditions — Turkic epics, Stoic philosophy, Islamic golden age, Far Eastern strategy, African empires, ancient mythology, and more. Each story includes an original-language quote, a vivid narrative, and a surprising modern connection. A history file ensures **zero repeats** across months.
 
 ## ✨ Features
 
-- **🌍 Cross-civilizational source pool** — Dede Korkut, Marcus Aurelius, Ibn Sina, Musashi, Gilgamesh, Mevlana, Nasreddin Hoca, and 50+ more
-- **⚖️ Equal-weight diversity** — No tradition dominates; picks maximize variety across all civilizations
-- **🔄 Zero repeats** — History file tracking prevents duplicate topics across months
+- **🤖 AI-generated, not static** — Your agent creates a brand new story every day from a pool of 100+ sources. Not a database of pre-written posts.
+- **🌍 7 civilizations** — Turkic, Islamic, Classical, Far East, African, Norse, Ancient — all drawn equally
+- **🔄 Infinite variety, zero repeats** — History file tracking + massive source pool = months of unique content
 - **💡 Modern connections** — Every story links to startups, tech, leadership, or daily life
-- **📝 Original language quotes** — Göktürk, Latin, Arabic, Japanese, Ancient Greek, Persian
-- **🎭 Varied tone** — Profound Mondays, witty Wednesdays (Nasreddin Hoca), deep-dive weekends
+- **📝 Original language quotes** — Göktürk, Latin, Arabic, Japanese, Ancient Greek, Persian, Mandinka
+- **🎭 Multiple formats** — Standard, thread, "this day in history", minimal/koan
 - **📱 Multi-channel** — WhatsApp, Telegram, Slack, Discord — anywhere OpenClaw delivers
 
 ## 📦 Example Output
@@ -35,7 +35,7 @@ evinde kalır mı? Ya tutarsa." Bitcoin: "Para devletsiz
 olur mu? Ya tutarsa."...
 ```
 
-See all 10 example outputs in [`examples/`](./examples/).
+The skill **generates new stories daily** — these are just samples of what it produces. See all 17 example outputs in [`examples/`](./examples/).
 
 ## 🚀 Quick Start
 

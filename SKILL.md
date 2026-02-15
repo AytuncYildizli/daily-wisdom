@@ -17,12 +17,14 @@ Deliver a daily historical anecdote, philosophical insight, or cultural story as
 
 ## What It Does
 
+This is NOT a database of pre-written stories. Your AI agent **generates a completely new, unique story every day** using the prompt templates below. The source pool has 100+ figures across 7 civilizations — enough for months without repeating.
+
 Each day, the agent:
-1. Checks the **history file** to avoid repeating topics
-2. Picks from a **weighted source pool** spanning civilizations
+1. Reads the **history file** to see what's been covered
+2. **Generates a brand new story** from the source pool, avoiding anything in history
 3. Writes a rich message: original-language quote → translation → story (5-8 sentences) → modern connection
 4. Delivers via the configured channel (WhatsApp, Telegram, Slack, etc.)
-5. Logs the topic to history
+5. Appends today's topic to the history file
 
 ## Source Pool
 
